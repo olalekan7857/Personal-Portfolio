@@ -13,7 +13,8 @@ It also features a **Django-powered contact form**, allowing visitors to send me
 - ✉️ Contact form with email integration (via Django backend)  
 - 📱 Fully responsive and mobile-friendly design  
 - 🔒 Uses environment variables to protect sensitive information  
-- ⚡ Fast, lightweight, and SEO-friendly  
+- ⚡ Fast, lightweight, and SEO-friendly
+- 😮 Visitors can download your CV with one click
 
 ---
 
