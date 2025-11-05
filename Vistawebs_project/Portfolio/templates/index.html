@@ -1,0 +1,330 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="{% static '/images/my_pic.jpg' %}" type="image/png">
+     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> -->
+    <title>Ademola Ibrahim - Web Developer | Web Designer | Fullstack Developer</title>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="{% static 'images/Vistablog-logo-light.png' %}" alt="Logo">
+            </a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-list">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#resume" class="nav-link">Resume</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#https://vistablog.vistaweb.com.ng" class="nav-link">Blog</a></li>
+                <li><a href="#prices" class="nav-link">Prices</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h4 class="animate-card from-left">I'm</h4>
+                <h1 class="animate-card from-left">Ademola Ibrahim</h1>
+                <h2 class="animate-card from-left">Web Developer</h2>
+                <div class="hero-buttons animate-card from-bottom">
+                    <a href="#contact" class="btn btn-primary">Hire Me</a>
+                    <a href="#contact" class="btn btn-primary">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-image animate-card from-left">
+                <img src="{% static '/images/mypic_wine.jpg' %}" alt="About Me">
+            </div>
+            <div class="about-content animate-card from-right">
+                <h4 class="underline ">Learn about me</h4>
+                <h2 >Why hire me</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptatum, quibusdam, voluptate, quia voluptas quod quos doloribus quas doloremque quidem voluptatibus. Quisquam voluptatum, quibusdam, voluptate, quia voluptas quod quos doloribus quas doloremque quidem voluptatibus.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptatum, quibusdam, voluptate, quia voluptas quod quos doloribus quas doloremque quidem voluptatibus. Quisquam voluptatum, quibusdam, voluptate.</p>
+                <a href="#contact" class="btn btn-primary animate-card from-bottom">Contact Me <i class="fas fa-arrow-down"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h4 class="animate-card from-left ">What i do</h4>
+            <h2 class="animate-card from-right">Awesome quality services</h2>
+            <div class="services-grid">
+                <div class="service-card animate-card from-left">
+                    <div class="service-icon-con">
+                        <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="service-content">
+                        <h3>Web Design</h3>
+                        <p>Creating beautiful, user-friendly interfaces that engage visitors and enhance user experience.</p>
+                    </div>
+                </div>
+
+                <div class="service-card animate-card from-right">
+                    <div class="service-icon-con">
+                        <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="service-content">
+                        <h3>Web Development</h3>
+                        <p>Building robust, scalable web applications with clean, maintainable code.</p>
+                    </div>
+                </div>
+
+                <div class="service-card animate-card from-left">
+                    <div class="service-icon-con">
+                        <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="service-content">
+                        <h3>Frontend Development</h3>
+                        <p>Implementing responsive designs with modern frameworks like React, Vue, and Angular.</p>
+                    </div>
+                </div>
+
+                <div class="service-card animate-card from-right">
+                    <div class="service-icon-con">
+                        <div class="service-icon">
+                        <i class="fas fa-server"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="service-content">
+                        <h3>Backend Development</h3>
+                        <p>Developing secure, efficient server-side applications with Node.js, Django, and more.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section class="resume" id="resume">
+        <div class="container">
+            <h4 class="animate-card from-left ">My skills</h4>
+            <h2 class="animate-card from-right">Tools that power my expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-card animate-card from-left">
+                    <div class="skill-icon">
+                        <i class="fab fa-wordpress"></i>
+                    </div>
+                    <h3>WordPress</h3>
+                    <p>Expert in creating custom WordPress themes and plugins with PHP.</p>
+                </div>
+
+                <div class="skill-card animate-card from-right">
+                    <div class="skill-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3>HTML & CSS</h3>
+                    <p>Semantic HTML5 markup and modern CSS3 techniques for responsive designs.</p>
+                </div>
+
+                <div class="skill-card animate-card from-left">
+                    <div class="skill-icon">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <h3>JavaScript</h3>
+                    <p>ES6+ features, DOM manipulation, and modern frameworks for interactive web apps.</p>
+                </div>
+                
+                <div class="skill-card animate-card from-right">
+                    <div class="skill-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3>Django</h3>
+                    <p>Building secure, scalable web applications with Django's powerful framework.</p>
+                </div>
+            </div>
+            <div class="animate-card from-bottom">
+                <a href="{% static 'images/my_pic.jpg' %}" download><button class="btn download btn-full-width"><i class="fas fa-arrow-down arrow-firstt"></i> Download CV <i class="fas fa-arrow-down arrow-lastt"></i></button></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    
+    {% if websites %}
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <h4 class="animate-card from-left ">Latest portfolio</h4>
+            <h2 class="animate-card from-right">I work with passion to deliver with excellence</h2>
+            <div class="portfolio-grid">
+
+                {% for website in websites %}
+                <div class="portfolio-item">
+                    <div class="portfolio-image animate-card from-left">
+                        <img src="{{ website.website_image.url }}" alt="{{ website }}">
+                    </div>
+                    <div class="portfolio-content animate-card from-right">
+                        <h2>{{ website.website_name }}</h2>
+                        <p class="portfolio-info">{{ website.content }}</p> <br>
+                        <div class="portfolio-btn-container">
+                            {% for tool in website.tools.all %}
+                            <button class="portfolio-btn">{{ tool }}</button>
+                            {% endfor %}
+                        </div> <br>
+                        <a href="{{ website.website_url }}" class="btn visit-btn"> <i class="fas fa-arrow-right arrow-first"></i> Visit Website <i class="fas fa-arrow-right arrow-last"></i></a>
+                    </div>
+                </div>
+                {% endfor %}
+            
+            </div>
+        </div>
+    </section> 
+    {% endif %}
+        
+
+    <!-- Prices Section -->
+    <section class="prices" id="prices">
+        <div class="container">
+            <h4 class="animate-card from-left ">My priice plan</h4>
+            <h2 class="animate-card from-right">Flexible Pricing</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h4 class="animate-card from-right">Starts from:</h4>
+                    <h3 class="animate-card from-left">$100.00</h3>
+                    <h2 class="animate-card from-right">Basic Website</h2>
+                    <ul class="animate-card from-left">
+                        <li>Fully responsive design</li>
+                        <li>Contact form included</li>
+                        <li>SEO optimized</li>
+                        <li>1-3 pages</li>
+                        <li>Basic customization</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary animate-card from-right">Contact Me</a>
+                </div>
+
+                <div class="pricing-card featured">
+                    <h4 class="animate-card from-left">Starts from:</h4>
+                    <h3 class="animate-card from-right">$300.00</h3>
+                    <h2 class="animate-card from-left">Business Website</h2>
+                    <ul class="animate-card from-right">
+                        <li>Fully responsive design</li>
+                        <li>Advanced contact form</li>
+                        <li>SEO optimized</li>
+                        <li>5-10 pages</li>
+                        <li>CMS integration</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary animate-card from-left">Contact Me</a>
+                </div>
+                
+                <div class="pricing-card">
+                    <h4 class="animate-card from-right">Starts from:</h4>
+                    <h3 class="animate-card from-left">$500.00</h3>
+                    <h2 class="animate-card from-right">E-commerce Website</h2>
+                    <ul class="animate-card from-left">
+                        <li>Fully responsive design</li>
+                        <li>Product management</li>
+                        <li>Payment gateway</li>
+                        <li>Unlimited products</li>
+                        <li>Advanced security</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary animate-card from-right">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-info animate-card from-left">
+                <h2 >Let's Build Something Great Together</h2>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>Email: olalekan7857@gmail.com</span>
+                </div> <br>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Location:Camp Abeokuta Nigeria</span>
+                </div> <br>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>Contact: +2349017779308</span>
+                </div>
+            </div>
+
+            <div class="contact-form animate-card from-bottom">
+                <h2 >Get in touch</h2>
+                <form method="POST">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        {{ form.name }}
+                    </div>
+                    <div class="form-group">
+                        {{ form.phone_number }}
+                    </div>
+                    <div class="form-group">
+                        {{ form.email }}
+                    </div>
+                    <div class="form-group">
+                        {{ form.subject }}
+                    </div>
+                    <div class="form-group">
+                        {{ form.message }}
+                    </div>
+                    <div><button type="submit" class="btn btn-full-width">Send Message</button></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>©2025. All right reserved by vistaweb</p>
+            <div class="social-links animate-card from-right">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" aria-label="Scroll to top">
+    <i class="fas fa-chevron-up"></i>
+    </button>
+
+    
+    <!-- JavaScript -->
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
