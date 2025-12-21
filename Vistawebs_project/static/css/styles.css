@@ -288,7 +288,7 @@ section {
 .hero {
     height: var(--hero-height);
     background: linear-gradient(hsla(45, 56%, 50%, 0.1), hsla(45, 56%, 50%, 0.1)), 
-    url('https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');
+    url('/static/images/hero-bg.png');
     /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('/static/images/hero-img.avif'); */
     background-size: cover;
     background-position: center;
@@ -301,7 +301,7 @@ section {
 
 .hero-content {
     flex: 1;
-    color: var(--text-color);
+    color: var(--white);
 }
 
 .hero h4 {

@@ -35,7 +35,7 @@ def index(request):
     else:
         form = Contact_form()
 
-    websites = Portfolio.objects.all()
+    websites = Portfolio.objects.all().order_by('-id')
 
     context = {
         'form':form,

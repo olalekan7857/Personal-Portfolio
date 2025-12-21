@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- favicon -->
-    <link rel="shortcut icon" href="{% static '/images/my_pic.jpg' %}" type="image/png">
+    <link rel="shortcut icon" href="{% static '/images/favicon.png' %}" type="image/png">
      <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> -->
-    <title>Ademola Ibrahim - Web Developer | Web Designer | Fullstack Developer</title>
+    <title>Ademola Ibrahim | Full-Stack Web Developer (Django & JavaScript)</title>
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Google Fonts -->
@@ -20,7 +20,7 @@
     <nav class="navbar">
         <div class="container">
             <a href="#" class="logo">
-                <img src="{% static 'images/Vistablog-logo-light.png' %}" alt="Logo">
+                <img src="{% static 'images/logo-light.png' %}" alt="Logo">
             </a>
             <div class="menu-toggle" id="mobile-menu">
                 <span class="bar"></span>
@@ -33,7 +33,7 @@
                 <li><a href="#services" class="nav-link">Services</a></li>
                 <li><a href="#resume" class="nav-link">Resume</a></li>
                 <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-                <li><a href="#https://vistablog.vistaweb.com.ng" class="nav-link">Blog</a></li>
+                {% comment %} <li><a href="#https://vistablog.vistaweb.com.ng" class="nav-link">Blog</a></li> {% endcomment %}
                 <li><a href="#prices" class="nav-link">Prices</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
@@ -46,10 +46,10 @@
             <div class="hero-content">
                 <h4 class="animate-card from-left">I'm</h4>
                 <h1 class="animate-card from-left">Ademola Ibrahim</h1>
-                <h2 class="animate-card from-left">Web Developer</h2>
+                <h2 class="animate-card from-left">Full-Stack Web Developer</h2>
                 <div class="hero-buttons animate-card from-bottom">
                     <a href="#contact" class="btn btn-primary">Hire Me</a>
-                    <a href="#contact" class="btn btn-primary">Contact Me</a>
+                    <a href="#portfolio" class="btn btn-primary">View Work</a>
                 </div>
             </div>
         </div>
@@ -59,13 +59,13 @@
     <section class="about" id="about">
         <div class="container">
             <div class="about-image animate-card from-left">
-                <img src="{% static '/images/mypic_wine.jpg' %}" alt="About Me">
+                <img src="{% static 'images/mypic_wine.jpg' %}" alt="About Me">
             </div>
             <div class="about-content animate-card from-right">
                 <h4 class="underline ">Learn about me</h4>
                 <h2 >Why hire me</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptatum, quibusdam, voluptate, quia voluptas quod quos doloribus quas doloremque quidem voluptatibus. Quisquam voluptatum, quibusdam, voluptate, quia voluptas quod quos doloribus quas doloremque quidem voluptatibus.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptatum, quibusdam, voluptate, quia voluptas quod quos doloribus quas doloremque quidem voluptatibus. Quisquam voluptatum, quibusdam, voluptate.</p>
+                <p>I’m a passionate Full-Stack Web Developer with hands-on experience building functional, user-focused web applications from concept to deployment. I enjoy turning ideas into clean, efficient, and scalable digital solutions.</p>
+                <p>With strong skills in both frontend and backend development, I focus on writing maintainable code, designing intuitive interfaces, and building systems that work reliably. I’m always learning, improving, and adapting to new technologies to deliver the best results.</p>
                 <a href="#contact" class="btn btn-primary animate-card from-bottom">Contact Me <i class="fas fa-arrow-down"></i></a>
             </div>
         </div>
@@ -86,7 +86,7 @@
                     
                     <div class="service-content">
                         <h3>Web Design</h3>
-                        <p>Creating beautiful, user-friendly interfaces that engage visitors and enhance user experience.</p>
+                        <p>I design clean, modern, and responsive user interfaces that provide an excellent user experience across all devices.</p>
                     </div>
                 </div>
 
@@ -99,7 +99,7 @@
                     
                     <div class="service-content">
                         <h3>Web Development</h3>
-                        <p>Building robust, scalable web applications with clean, maintainable code.</p>
+                        <p>I build fast, secure, and scalable web applications using modern tools and best development practices.</p>
                     </div>
                 </div>
 
@@ -112,7 +112,7 @@
                     
                     <div class="service-content">
                         <h3>Frontend Development</h3>
-                        <p>Implementing responsive designs with modern frameworks like React, Vue, and Angular.</p>
+                        <p>Implementing responsive and interactive user interfaces using HTML, CSS, and JavaScript.</p>
                     </div>
                 </div>
 
@@ -125,7 +125,7 @@
                     
                     <div class="service-content">
                         <h3>Backend Development</h3>
-                        <p>Developing secure, efficient server-side applications with Node.js, Django, and more.</p>
+                        <p>I develop powerful backend systems with Django and Flask, handling authentication, databases, APIs, and business logic.</p>
                     </div>
                 </div>
             </div>
@@ -143,7 +143,7 @@
                         <i class="fab fa-wordpress"></i>
                     </div>
                     <h3>WordPress</h3>
-                    <p>Expert in creating custom WordPress themes and plugins with PHP.</p>
+                    <p>Building and customizing WordPress websites for blogs, business sites, and content-driven platforms.</p>
                 </div>
 
                 <div class="skill-card animate-card from-right">
@@ -151,7 +151,7 @@
                         <i class="fab fa-html5"></i>
                     </div>
                     <h3>HTML & CSS</h3>
-                    <p>Semantic HTML5 markup and modern CSS3 techniques for responsive designs.</p>
+                    <p>Creating well-structured, responsive, and accessible layouts using modern HTML and CSS techniques.</p>
                 </div>
 
                 <div class="skill-card animate-card from-left">
@@ -159,7 +159,7 @@
                         <i class="fab fa-js"></i>
                     </div>
                     <h3>JavaScript</h3>
-                    <p>ES6+ features, DOM manipulation, and modern frameworks for interactive web apps.</p>
+                    <p>Adding interactivity, dynamic content, and smooth user experiences with modern JavaScript.</p>
                 </div>
                 
                 <div class="skill-card animate-card from-right">
@@ -167,11 +167,11 @@
                         <i class="fab fa-python"></i>
                     </div>
                     <h3>Django</h3>
-                    <p>Building secure, scalable web applications with Django's powerful framework.</p>
+                    <p>Developing secure and scalable backend systems using Django for web applications and APIs.</p>
                 </div>
             </div>
             <div class="animate-card from-bottom">
-                <a href="{% static 'images/my_pic.jpg' %}" download><button class="btn download btn-full-width"><i class="fas fa-arrow-down arrow-firstt"></i> Download CV <i class="fas fa-arrow-down arrow-lastt"></i></button></a>
+                <a href="{% static 'file/Ademola_Ibrahim_Olalekan_Fullstack_Developer_CV.pdf' %}" download><button class="btn download btn-full-width"><i class="fas fa-arrow-down arrow-firstt"></i> Download CV <i class="fas fa-arrow-down arrow-lastt"></i></button></a>
             </div>
         </div>
     </section>
@@ -212,8 +212,8 @@
     <!-- Prices Section -->
     <section class="prices" id="prices">
         <div class="container">
-            <h4 class="animate-card from-left ">My priice plan</h4>
-            <h2 class="animate-card from-right">Flexible Pricing</h2>
+            <h4 class="animate-card from-left ">My price plan</h4>
+            <h2 class="animate-card from-right">Pricing varies depending on project type, features, and timeline.</h2>
             <div class="pricing-grid">
                 <div class="pricing-card">
                     <h4 class="animate-card from-right">Starts from:</h4>
@@ -271,7 +271,7 @@
                 </div> <br>
                 <div class="contact-item">
                     <i class="fas fa-map-marker-alt"></i>
-                    <span>Location:Camp Abeokuta Nigeria</span>
+                    <span>Nigeria</span>
                 </div> <br>
                 <div class="contact-item">
                     <i class="fas fa-phone"></i>
@@ -309,11 +309,11 @@
         <div class="container">
             <p>©2025. All right reserved by vistaweb</p>
             <div class="social-links animate-card from-right">
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://github.com/olalekan7857"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/ademola-ibrahim-5969a2378"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/horlalekan___"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/ibrahim.ademola.7583"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://wa.me/+2349017779308"><i class="fab fa-whatsapp"></i></a>
             </div>
         </div>
     </footer>
