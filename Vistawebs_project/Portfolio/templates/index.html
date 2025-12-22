@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- favicon -->
-    <link rel="shortcut icon" href="{% static '/images/favicon.png' %}" type="image/png">
+    <link rel="shortcut icon" href="{% static 'images/favicon.png' %}" type="image/png">
      <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> -->
     <title>Ademola Ibrahim | Full-Stack Web Developer (Django & JavaScript)</title>
     <!-- Font Awesome CDN -->
@@ -177,7 +177,6 @@
     </section>
 
     <!-- Portfolio Section -->
-    
     {% if websites %}
     <section class="portfolio" id="portfolio">
         <div class="container">
@@ -191,7 +190,7 @@
                         <img src="{{ website.website_image.url }}" alt="{{ website }}">
                     </div>
                     <div class="portfolio-content animate-card from-right">
-                        <h2>{{ website.website_name }}</h2>
+                        <h2>{{ website.website_name }}</h2> <br>
                         <p class="portfolio-info">{{ website.content }}</p> <br>
                         <div class="portfolio-btn-container">
                             {% for tool in website.tools.all %}

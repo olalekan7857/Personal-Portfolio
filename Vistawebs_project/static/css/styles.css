@@ -12,19 +12,6 @@
     --black: hsl(0, 0%, 0%);
     --gray: hsl(0, 0%, 90%);
     --dark-gray: hsl(0, 0%, 70%);
-
-    /* --text-110: #93D7B7;
-    --primaryn: #44B78B;
-    --link-color: #93D7B7;
-    --primary-deepn: #0C4B33;
-    --primary-color: #0C4B33;
-    --primary-darkn: #0C3C26;
-    --font-color: #C1CAD2;
-    --background-black: #0E1117;
-
-    --color-5: #dfdccf;
-    --color-6: #d2ccb6; 
-    --color-7: #a2936d; */
     
     /* Font Sizes */
     --fs-base: 1rem;
@@ -276,20 +263,14 @@ section {
     height: 3px;
     margin: 5px auto;
     z-index: 500;
-    background-color: var(--primary-color);
-    transition: var(--transition-fast);
-}
-
-.navbar.scrolled .bar {
     background-color: var(--text-color);
+    transition: var(--transition-fast);
 }
 
 /* Hero Section */
 .hero {
     height: var(--hero-height);
-    background: linear-gradient(hsla(45, 56%, 50%, 0.1), hsla(45, 56%, 50%, 0.1)), 
-    url('/static/images/hero-bg.png');
-    /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('/static/images/hero-img.avif'); */
+    background-image: url('/static/images/hero-bg.png');
     background-size: cover;
     background-position: center;
     background-attachment: scroll;
@@ -608,7 +589,7 @@ section {
     background-color: var(--white);
     border-radius: var(--radius-lg);
     overflow: hidden;
-    padding: var(--spacing-md);
+    padding: var(--spacing-sm);
     box-shadow: var(--shadow-md);
     transition: var(--transition-slow);
 }
@@ -645,6 +626,7 @@ section {
 
 .portfolio-content h2 {
     color: var(--color-7);
+    margin: 0;
 }
 
 .portfolio-image img {
@@ -663,7 +645,7 @@ section {
     justify-content: center;
     flex-wrap: wrap;
     gap: var(--spacing-xs);
-    padding: 0 var(--spacing-sm);
+    padding: 0;
 }
 
 .portfolio-btn {
@@ -1061,8 +1043,14 @@ section {
   width: 100%;
 }
 
+/* Responsive Styles */
+@media (max-width: 950px) {
+    .pricing-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+}
 
-/* For mobile menu */
 @media (max-width: 850px) {
   .nav-link {
     color: var(--text-color) !important;
@@ -1077,58 +1065,13 @@ section {
     width: 100%;
     overflow-x: hidden;
   }
-}
-
-/* Animations */
-/* @keyframes fadeInLeft {
-    from {
-        opacity: 0;
-        transform: translateX(-50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes fadeInRight {
-    from {
-        opacity: 0;
-        transform: translateX(50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-} */
-
-/* Responsive Styles */
-@media (max-width: 950px) {
-    .pricing-grid {
-        grid-template-columns: 1fr;
-        gap: var(--spacing-md);
-    }
-}
-
-@media (max-width: 850px) {
     .menu-toggle {
         display: block;
     }
     
     .menu-toggle.active .bar:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
-}
+    }
     
     .menu-toggle.active .bar:nth-child(2) {
         opacity: 0;
@@ -1136,7 +1079,7 @@ section {
     
     .menu-toggle.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
-}
+    }
 
     .nav-list {
         position: fixed;
@@ -1152,7 +1095,7 @@ section {
         transition: var(--transition-slow);
         box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
         z-index: 1000;
-}
+    }
     
     .nav-list.active {
         right: 0;
@@ -1182,6 +1125,18 @@ section {
         --fs-4: 1.25rem;
         --fs-5: 1rem;
         --fs-6: 0.75rem;
+    }
+
+    .portfolio-info {
+        padding: 0 var(--spacing-xs);
+    }
+
+    .portfolio-btn {
+        padding: 0.3rem 0.6rem;
+    }
+
+    .hero {
+        background-image: url("/static/images/hero-mobile-bg.webp");
     }
 
     .container {
@@ -1218,20 +1173,6 @@ section {
     .portfolio-item {
         padding: var(--spacing-xs);
     }
-
-    /* .service-card {
-        flex-direction: column;
-    }
-
-    .service-icon-con {
-        justify-content: start;
-        border: none;
-        border-bottom: 1px solid var(--primary-color);
-    }
-
-    .service-icon {
-        border: 1px solid var(--primary-color);
-    } */
     
     .pricing-card.featured {
         transform: scale(1);
