@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Mobile Menu Toggle
     const menuToggle = document.getElementById('mobile-menu');
     const navList = document.querySelector('.nav-list');
+    const bar = document.querySelector('.bar');
 
     //Box animation
     const boxes = document.querySelectorAll('.animate-card');
